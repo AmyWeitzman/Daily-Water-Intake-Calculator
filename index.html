@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daily Water Intake</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="app-container">
+      <form id="input-form" onsubmit="return calcResults()">
+        <div class="section">
+          <label for="weight">How many pounds do you weigh? </label>
+          <input type="number" id="weight" class="input-text" name="weight" min='0' value='0'>
+        </div>
+        <div class="section">
+          <label for="exercise-mins">How many minutes per day do you exercise? </label>
+          <input type="number" id="exercise-mins" class="input-text" name="exercise" min='0' value='0'>
+        </div>
+        <button type="submit" id="submit-btn">Calculate</button>
+      </form>
+      <p id="results"></p>
+    </div>
+  </body>
+</html>
